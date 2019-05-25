@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea305c8a-028e-4daa-863c-e02fd821e13d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/NaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/NaryTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/BinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/BinaryTreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/BinaryTreeTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BinaryTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/BinaryTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tree/NaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/NaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tree/UnaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tree/UnaryTreeTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -31,20 +24,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tree/UnaryTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+            <state relative-caret-position="169">
+              <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tree/NaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="155" column="20" lean-forward="true" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
+            <state relative-caret-position="679">
+              <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,8 +68,8 @@
         <option value="$PROJECT_DIR$/src/main/java/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/test/java/BinaryTreeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/tree/NaryTreeNode.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tree/UnaryTreeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/tree/NaryTree.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tree/UnaryTreeTest.java" />
       </list>
     </option>
   </component>
@@ -283,12 +276,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UnaryTreeTest_serialize_the_unaryTree - 2019.05.25 at 23h 34m 24s.xml">
-      <configuration name="UnaryTreeTest.serialize_the_unaryTree" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UnaryTreeTest_serialize_the_unaryTree - 2019.05.25 at 23h 54m 10s.xml">
-      <configuration name="UnaryTreeTest.serialize_the_unaryTree" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UnaryTreeTest_serialize_the_unaryTree - 2019.05.25 at 23h 54m 23s.xml">
       <configuration name="UnaryTreeTest.serialize_the_unaryTree" configurationId="JUnit" />
     </history-entry>
@@ -313,6 +300,21 @@
     <history-entry file="UnaryTreeTest_serialize_the_unaryTree - 2019.05.26 at 00h 03m 25s.xml">
       <configuration name="UnaryTreeTest.serialize_the_unaryTree" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UnaryTreeTest_serialize_the_unaryTree - 2019.05.26 at 00h 06m 28s.xml">
+      <configuration name="UnaryTreeTest.serialize_the_unaryTree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UnaryTreeTest_serialize_the_unaryTree - 2019.05.26 at 00h 06m 57s.xml">
+      <configuration name="UnaryTreeTest.serialize_the_unaryTree" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -328,11 +330,11 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.31260228" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41898528" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41898528" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.39443535" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Build" order="10" />
@@ -593,20 +595,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tree/UnaryTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tree/NaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="155" column="20" lean-forward="true" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
+        <state relative-caret-position="679">
+          <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tree/UnaryTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
         </state>
       </provider>
     </entry>

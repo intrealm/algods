@@ -115,8 +115,7 @@ public class NaryTree{
         if(childrenString.length()>=2)
         {
             // search divide for childrens
-            List<NaryTreeNode> childNodes = new LinkedList<>();
-            currNode.setChildren(childNodes);
+            List<NaryTreeNode> childNodes = currNode.getChildren();
             int openingBrac = 0;
             int startingPointForCurrChild = 0;
             for(int i=0;i<childrenString.length()-1;i++)
@@ -131,14 +130,12 @@ public class NaryTree{
                     openingBrac--;
                     if(openingBrac==0)
                     {
-                        //
                         String childString = childrenString.substring(startingPointForCurrChild,i+1);
                         childNodes.add(deserializeChild(childString));
                         startingPointForCurrChild=i+2;
                     }
                 }
             }
-            //:a:[],b[]
         }
       return currNode;
     }

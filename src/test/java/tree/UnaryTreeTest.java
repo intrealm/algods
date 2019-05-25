@@ -42,11 +42,11 @@ public class UnaryTreeTest {
     @Test
     public void string_operation_test()
     {
-        String dummy  ="abcdef";
+        String dummy  = "abcdef";
         Assert.assertEquals("abcdef",dummy);
         Assert.assertEquals("cdef",dummy.substring(2));
 
-        String dummy2  ="10:asdf";
+        String dummy2  = "10:asdf";
         int x = dummy2.indexOf(':');
         Assert.assertEquals(dummy2.substring(x+1),"asdf");
     }
