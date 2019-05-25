@@ -14,26 +14,26 @@ public class UnaryTreeTest {
     public void serialize_the_unaryTree()
     {
         NaryTreeNode ten = new NaryTreeNode(10);
-        NaryTreeNode ttwnety = new NaryTreeNode(20);
-        NaryTreeNode ftin = new NaryTreeNode(15);
+        NaryTreeNode twenty = new NaryTreeNode(20);
+        NaryTreeNode fifteen = new NaryTreeNode(15);
         NaryTreeNode five = new NaryTreeNode(5);
         NaryTreeNode four = new NaryTreeNode(4);
-        NaryTreeNode thrty = new NaryTreeNode(30);
-        NaryTreeNode st = new NaryTreeNode(60);
+        NaryTreeNode thirty = new NaryTreeNode(30);
+        NaryTreeNode sixty = new NaryTreeNode(60);
 
-        ten.getChildren().add(ttwnety);ten.getChildren().add(st);
-            ttwnety.getChildren().add(ftin);ttwnety.getChildren().add(thrty);
-                ftin.getChildren().add(five);ftin.getChildren().add(four);
+        ten.getChildren().add(twenty);ten.getChildren().add(sixty);
+            twenty.getChildren().add(fifteen);twenty.getChildren().add(thirty);
+                fifteen.getChildren().add(five);fifteen.getChildren().add(four);
 
         NaryTree tree = new NaryTree(ten);
 
-        String serializedStringb= NaryTree.seriazedString(tree);
+        String serializedTree= NaryTree.seriazedString(tree);
 
-        NaryTree clonedTree = NaryTree.deseriazedString(serializedStringb);
+        NaryTree clonedTree = NaryTree.deseriazedString(serializedTree);
 
-        String clonedStringdb = NaryTree.seriazedString(clonedTree);
+        String seriablizedClonedTree = NaryTree.seriazedString(clonedTree);
 
-        Assert.assertEquals(clonedStringdb,serializedStringb);
+        Assert.assertEquals(seriablizedClonedTree,serializedTree);
         Assert.assertFalse(tree == clonedTree);
         Assert.assertEquals( tree , clonedTree );
 
