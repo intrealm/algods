@@ -1,5 +1,8 @@
+package tree;
+
 import org.junit.Assert;
 import org.junit.Test;
+import tree.BinaryTree;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -56,7 +59,6 @@ public class BinaryTreeTest {
         postOrder.forEach(con.andThen(con2));
 
         Assert.assertEquals("4,5,8,7,13,15,70,22,20,9,3,",testString.toString());
-
 
     }
 }
