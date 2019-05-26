@@ -1,8 +1,5 @@
 package tree;
 
-import com.sun.istack.internal.NotNull;
-import com.sun.xml.internal.ws.util.StringUtils;
-
 import javax.xml.soap.Node;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -153,7 +150,7 @@ public class NaryTree{
         return true;
     }
 
-    private static boolean compareNodes(@NotNull NaryTreeNode obj1,@NotNull NaryTreeNode obj2)
+    private static boolean compareNodes( NaryTreeNode obj1, NaryTreeNode obj2)
     {
         if(obj1.getVal()!=obj2.getVal()
         || (Objects.isNull(obj1.getChildren()) && !Objects.isNull(obj2.getChildren()))

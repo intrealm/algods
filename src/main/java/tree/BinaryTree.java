@@ -1,6 +1,6 @@
 package tree;
 
-import com.sun.istack.internal.NotNull;
+
 
 import java.util.Collections;
 import java.util.LinkedList;
@@ -57,7 +57,7 @@ public class BinaryTree {
         return new BinaryTreeNode(value);
     }
 
-    private void getorderedList(@NotNull BinaryTreeNode currNode,LinkedList<Integer> list)
+    private void getorderedList( BinaryTreeNode currNode,LinkedList<Integer> list)
     {
 
         //navigateLeft
@@ -73,7 +73,7 @@ public class BinaryTree {
         }
     }
 
-    private void getPostorderedList(@NotNull BinaryTreeNode currNode,LinkedList<Integer> list)
+    private void getPostorderedList( BinaryTreeNode currNode,LinkedList<Integer> list)
     {
 
         //navigateLeft
@@ -87,7 +87,7 @@ public class BinaryTree {
         }
         list.add(currNode.getVal());
     }
-    private void getPreorderedList(@NotNull BinaryTreeNode currNode,LinkedList<Integer> list)
+    private void getPreorderedList( BinaryTreeNode currNode,LinkedList<Integer> list)
     {
         list.add(currNode.getVal());
         //navigateLeft
@@ -101,7 +101,7 @@ public class BinaryTree {
         }
     }
 
-    private void getTwistedOrderedList(@NotNull BinaryTreeNode currNode,LinkedList<Integer> list,boolean twist)
+    private void getTwistedOrderedList( BinaryTreeNode currNode,LinkedList<Integer> list,boolean twist)
     {
         list.add(currNode.getVal());
         if(!twist)
