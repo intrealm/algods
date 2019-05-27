@@ -29,3 +29,35 @@ ON2+ 1000 ===> 1000 is ignored
 # preferences on the complexicity
     O1 < ON < ON2 <ON3 < ONN
   
+  
+###2^K = N
+    log2^K = logN
+    KLog2 = logN
+    since Logbase2 ^ 2 = 1
+    K = logN
+    
+    if(evry iteration reduces the criteria to reduce iterations)
+    
+
+Stack
+    push
+    pop
+    peek like pop but doesn't chnage a thing
+
+Used via linkedlist    
+
+minimum stack for minimum value at point in stack
+    push togeth
+    pop togeth
+    
+    
+Queue
+    lilo or fifo
+    enqueue
+    dequeue
+    Peek
+    offer - if space is available adds and returns true otherwise returns false
+
+simple ds in this would be linkedlist with top/bottom pointer 
+
+but better is a circular queue
