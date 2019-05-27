@@ -3,10 +3,6 @@ package tree;
 import org.junit.Assert;
 import org.junit.Test;
 
-import javax.swing.plaf.synth.SynthTextAreaUI;
-import java.util.List;
-import java.util.function.Consumer;
-
 public class UnaryTreeTest {
 
 

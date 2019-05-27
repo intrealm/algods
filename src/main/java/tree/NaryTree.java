@@ -1,6 +1,5 @@
 package tree;
 
-import javax.xml.soap.Node;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
