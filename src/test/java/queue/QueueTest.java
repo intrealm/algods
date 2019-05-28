@@ -43,7 +43,9 @@ public class QueueTest {
         queue.enQueue(10);//9
        // Assert.assertEquals(9,queue.getSize());
       //  Assert.assertEquals(10,queue.getSize());
-        Assert.assertEquals(Boolean.TRUE,queue.isFull());
+        Assert.assertEquals(Boolean.TRUE,queue.offer(10));
+        Assert.assertEquals(Boolean.FALSE,queue.offer(10));
+
 
 
 
@@ -116,9 +118,13 @@ public class QueueTest {
     {
         Queue<Integer> queue = new CircularQueue<>(10);
 
-        queue.offer(1);queue.offer(1);queue.offer(1);queue.offer(1);queue.offer(1);queue.offer(1);queue.offer(1);queue.offer(1);queue.offer(1);queue.offer(1);
+        queue.offer(1);queue.offer(1);queue.offer(1);queue.offer(4);
+        queue.offer(1);queue.offer(1);queue.offer(1);queue.offer(8);
+        Assert.assertEquals(Boolean.TRUE,queue.offer(1));
+        queue.offer(1);queue.offer(10);
         Assert.assertEquals(Boolean.FALSE,queue.offer(1));
-        Assert.assertEquals((Object)Integer.valueOf(10),queue.getSize());
+        Assert.assertEquals(Boolean.FALSE,queue.offer(1));
+      //  Assert.assertEquals((Object)Integer.valueOf(10),queue.getSize());
     }
 
     @Test

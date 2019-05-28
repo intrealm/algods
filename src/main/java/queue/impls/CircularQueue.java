@@ -66,14 +66,7 @@ public class CircularQueue<T> implements Queue<T>{
 
     @Override
     public int getSize() {
-        if(this.isEmpty())
-            return 0;
-        if(head<tail)
-            return tail-head;
-        else if(head>tail)
-            return this.MAX_SIZE-head+1+tail;
-        else
-            return 1;
+        return -1;
     }
 
     @Override

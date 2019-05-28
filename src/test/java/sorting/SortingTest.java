@@ -24,8 +24,8 @@ public class SortingTest {
         this.setOfImplementations.add(new SelectionSort());
         this.setOfImplementations.add(new MergerSort());
 
-        this.setOfImplementations.clear();
-        this.setOfImplementations.add(new QuickSort());
+       // this.setOfImplementations.clear();
+       // this.setOfImplementations.add(new QuickSort());
 
 
         /*Stream.of(allImpls).map(fqNames).peek(System.out::println).map(fqn->{
