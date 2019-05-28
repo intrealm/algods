@@ -69,7 +69,7 @@ Queue based on stack
 #####Measures or characteristics
     1.how does it scale as the inpur increses
     2.does it need extra space for the information during sorting
-    3.is it stable?
+    3.is it stable?(Meaning, is the sorted sublist matched the sublist of the sorted list?)
     4.comparison and swaps performed (heavy operation)
            does it work better for nearly sorted?
     5.is it adaptive
@@ -104,7 +104,7 @@ Queue based on stack
 ######Points to know
     1.starts with Sorted sublist
     2.sorts as it grows
-    3.Not Adaptive
+    3.Adaptive
     4.better average case
     5.O(N^2)
     6.No extra space
@@ -113,4 +113,14 @@ Queue based on stack
     8.Stable Sort
     
     9.Reverse list comes out as worst case
+
+
+#####Insertion Sort over Buble sort(bubble sort issues)
+    1.Takes additional pass
+    2.Needs more comparison
+    3.Sssignments are more
     
+#####Shell Sort
+    Clever Insertion Sort    
+
+######Points to know    

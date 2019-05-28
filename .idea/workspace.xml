@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea305c8a-028e-4daa-863c-e02fd821e13d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/graph/GNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sorting/Sort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sorting/impl/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sorting/impl/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sorting/impl/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sorting/SortingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sorting/impl/ShellSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/queue/impls/CircularQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/queue/impls/CircularQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/queue/impls/QueueOnStacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/queue/impls/QueueOnStacks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/queue/QueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/queue/QueueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sorting/impl/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sorting/impl/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sorting/SortingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sorting/SortingTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -37,19 +31,19 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="305">
-                <caret line="112" column="17" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
+              <first_editor relative-caret-position="537">
+                <caret line="123" column="25" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sorting/impl/InsertionSort.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sorting/impl/ShellSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="152">
+              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,10 +52,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sorting/impl/SelectionSort.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sorting/impl/InsertionSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="18" column="16" selection-start-line="18" selection-end-line="19" />
+            <state relative-caret-position="-8">
+              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,22 +72,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sorting/impl/BubbleSort.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/sorting/SortingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="544">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/sorting/SortingTest.java">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            <state relative-caret-position="170">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1657#1658#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,15 +148,17 @@
         <option value="$PROJECT_DIR$/src/main/java/sorting/impl/SelectionSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/sorting/Sort.java" />
         <option value="$PROJECT_DIR$/src/main/java/sorting/impl/BubbleSort.java" />
-        <option value="$PROJECT_DIR$/src/test/java/sorting/SortingTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/sorting/impl/ShellSort.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sorting/SortingTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sorting/impl/InsertionSort.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-58" />
+    <option name="y" value="-18" />
+    <option name="width" value="1380" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectView">
@@ -373,34 +372,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SortingTest - 2019.05.28 at 10h 35m 16s.xml">
+    <history-entry file="SortingTest - 2019.05.28 at 11h 42m 36s.xml">
       <configuration name="SortingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest_test_simple_selection - 2019.05.28 at 10h 35m 30s.xml">
-      <configuration name="SortingTest.test_simple_selection" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SortingTest_test_simple_selection_repetive_values - 2019.05.28 at 10h 36m 00s.xml">
-      <configuration name="SortingTest.test_simple_selection_repetive_values" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SortingTest - 2019.05.28 at 10h 38m 08s.xml">
+    <history-entry file="SortingTest - 2019.05.28 at 11h 44m 50s.xml">
       <configuration name="SortingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest_test_simple_selection - 2019.05.28 at 10h 38m 25s.xml">
-      <configuration name="SortingTest.test_simple_selection" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SortingTest - 2019.05.28 at 10h 39m 37s.xml">
+    <history-entry file="SortingTest - 2019.05.28 at 11h 45m 06s.xml">
       <configuration name="SortingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest - 2019.05.28 at 10h 43m 51s.xml">
+    <history-entry file="SortingTest - 2019.05.28 at 11h 45m 09s.xml">
       <configuration name="SortingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest - 2019.05.28 at 10h 56m 54s.xml">
+    <history-entry file="SortingTest - 2019.05.28 at 11h 49m 58s.xml">
       <configuration name="SortingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest - 2019.05.28 at 10h 57m 27s.xml">
+    <history-entry file="SortingTest - 2019.05.28 at 11h 52m 51s.xml">
       <configuration name="SortingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest - 2019.05.28 at 10h 59m 47s.xml">
+    <history-entry file="SortingTest - 2019.05.28 at 11h 53m 25s.xml">
+      <configuration name="SortingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SortingTest - 2019.05.28 at 11h 58m 05s.xml">
+      <configuration name="SortingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SortingTest - 2019.05.28 at 11h 59m 05s.xml">
+      <configuration name="SortingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SortingTest - 2019.05.28 at 11h 59m 36s.xml">
       <configuration name="SortingTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -414,10 +413,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14599685" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08018155" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -427,12 +426,12 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36877078" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41734862" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37315875" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41694352" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32733223" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27168575" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26578072" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32827735" />
       <window_info anchor="bottom" id="Build" order="10" />
@@ -504,15 +503,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/sorting/SortingTest.java</url>
-          <line>10</line>
+          <line>27</line>
           <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/sorting/impl/ShellSort.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/sorting/SortingTest.java</url>
-          <line>25</line>
+          <line>49</line>
           <properties />
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/sorting/SortingTest.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -526,6 +537,11 @@
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>increment&gt;0</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>arr[head]</expression-string>
         <language-id>JAVA</language-id>
@@ -706,16 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#1657#1658#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -973,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sorting/impl/BubbleSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sorting/impl/SelectionSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -990,6 +989,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sorting/impl/BubbleSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sorting/Sort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -997,31 +1003,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sorting/SortingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="305">
-            <caret line="112" column="17" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
+          <first_editor relative-caret-position="537">
+            <caret line="123" column="25" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
       <provider editor-type-id="text-editor" />
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sorting/impl/ShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sorting/impl/InsertionSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="-8">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sorting/SortingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

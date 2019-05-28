@@ -7,6 +7,7 @@ import src.main.java.sorting.Sort;
 import src.main.java.sorting.impl.BubbleSort;
 import src.main.java.sorting.impl.InsertionSort;
 import src.main.java.sorting.impl.SelectionSort;
+import src.main.java.sorting.impl.ShellSort;
 
 public class SortingTest {
 
@@ -17,6 +18,7 @@ public class SortingTest {
         //sortingImpl = new BubbleSort();
         //sortingImpl = new SelectionSort();
         sortingImpl = new InsertionSort();
+       // sortingImpl = new ShellSort();
         //switch here
     }
 
