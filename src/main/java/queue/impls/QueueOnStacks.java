@@ -10,8 +10,6 @@ public class QueueOnStacks<T> implements Queue<T> {
 
     Stack<T> stackTwo = new Stack<>();
 
-    boolean isQueuying =true;
-
     int size;
 
     int MAX_SIZE;
@@ -25,8 +23,9 @@ public class QueueOnStacks<T> implements Queue<T> {
     public void enQueue(T t) {
         if(isFull())
             throw new RuntimeException("overflow");
-        if(!isQueuying)
-            moveBackToStackOne();
+        if(stackOne.isEmpty())
+            while(!stackTwo.isEmpty())
+                stackOne.push(stackTwo.pop());
         stackOne.push(t);
         size++;
     }
@@ -35,8 +34,9 @@ public class QueueOnStacks<T> implements Queue<T> {
     public T deQueue() {
         if(isEmpty())
             throw new RuntimeException("underflow");
-        if(isQueuying)
-            moveToStackTwo();
+        if(stackTwo.isEmpty())
+            while(!stackOne.isEmpty())
+                stackTwo.push(stackOne.pop());
         T val = stackTwo.pop();
         size--;
 
@@ -46,13 +46,11 @@ public class QueueOnStacks<T> implements Queue<T> {
     private void moveBackToStackOne()
     {
         QueueOnStacks.fillAnother(this.stackTwo,this.stackOne);
-        isQueuying=true;
     }
 
     private void moveToStackTwo()
     {
         QueueOnStacks.fillAnother(this.stackOne,this.stackTwo);
-        isQueuying=false;
     }
 
     private static void fillAnother(Stack source,Stack target)
@@ -69,10 +67,11 @@ public class QueueOnStacks<T> implements Queue<T> {
     public T peek() {
         if(isEmpty())
             throw new RuntimeException("underflow");
-        if(isQueuying)
-            moveToStackTwo();
-        T val = stackTwo.peek();
 
+        if(stackTwo.isEmpty())
+            while(!stackOne.isEmpty())
+                stackTwo.push(stackOne.pop());
+        T val = stackTwo.peek();
         return val;
     }
 

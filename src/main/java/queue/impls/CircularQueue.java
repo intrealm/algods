@@ -4,7 +4,7 @@ import src.main.java.queue.Queue;
 
 import java.lang.reflect.Array;
 
-public class CircularQueue<T > implements Queue<T>{
+public class CircularQueue<T> implements Queue<T>{
 
     private T arr[];
 
@@ -13,23 +13,22 @@ public class CircularQueue<T > implements Queue<T>{
     private int head;
     private int tail;
 
-    private int size;
-
     public CircularQueue(int maxSize)
     {
         MAX_SIZE = maxSize;
         arr = (T[])new Object[maxSize];
-        head=0;
-        tail=0;
+        head=-1;
+        tail=-1;
     }
 
     @Override
     public void enQueue(T o) {
         if(isFull())
             throw new RuntimeException("Overflow");
-        arr[tail]=o;
-        tail++;
-        size++;
+        this.tail= this.getNextTailIndex();
+        arr[this.tail]=o;
+        if(head==-1)
+            head=tail;
     }
 
     @Override
@@ -37,8 +36,10 @@ public class CircularQueue<T > implements Queue<T>{
         if(isEmpty())
             throw new RuntimeException("Underflow");
         T val = arr[head];
-        head++;
-        size--;
+        if(head==tail)
+            head=-1;
+        else
+            head=getNextHeadIndex();
      //   arr[head]=null; //check if really necessary
         return val;
     }
@@ -65,11 +66,40 @@ public class CircularQueue<T > implements Queue<T>{
 
     @Override
     public int getSize() {
-        return this.size;
+        if(this.isEmpty())
+            return 0;
+        if(head<tail)
+            return tail-head;
+        else if(head>tail)
+            return this.MAX_SIZE-head+1+tail;
+        else
+            return 1;
     }
 
     @Override
     public int getMaxSize() {
         return this.MAX_SIZE;
+    }
+
+    @Override
+    public boolean isEmpty()
+    {
+        return this.head==-1;
+    }
+
+    @Override
+    public boolean isFull()
+    {
+        return getNextTailIndex()==this.head;
+    }
+
+    private int getNextTailIndex()
+    {
+        return (this.tail+1)%this.MAX_SIZE;
+    }
+
+    private int getNextHeadIndex()
+    {
+        return (this.head+1)%this.MAX_SIZE;
     }
 }
