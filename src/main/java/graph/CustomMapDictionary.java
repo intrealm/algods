@@ -43,12 +43,8 @@ public class CustomMapDictionary {
                 }
             }
 
-
-            if (lastGNodePresent==null) {
+            if(firstCharactersMap.isEmpty() ||lastGNodePresent==null) {
                 lastGNodePresent = new GNodeV3<>(charArr[x++]);
-            }
-            if(firstCharactersMap.isEmpty())
-            {
                 firstCharactersMap.put(lastGNodePresent.getVal(),lastGNodePresent);
             }
             for (; x < charArr.length; x++) {

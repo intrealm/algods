@@ -49,7 +49,7 @@ public class CustomDictionary {
             }
 
 
-            if (this.firstCharacter.isEmpty()) {
+            if (lastGNodePresent==null || this.firstCharacter.isEmpty()) {
                 lastGNodePresent = new GNodeV2<>(charArr[x++]);
                 firstCharacter.add(lastGNodePresent);
             }

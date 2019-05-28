@@ -24,6 +24,10 @@ public class DictionaryTest {
         dictionary.addAWord("hell");
         Assert.assertEquals(6,dictionary.getNodeCounts());
         Assert.assertEquals(3,dictionary.getWordCounts());
+
+        dictionary.addAWord("a");
+        Assert.assertEquals(7,dictionary.getNodeCounts());
+        Assert.assertEquals(4,dictionary.getWordCounts());
     }
 
     @Test
@@ -40,5 +44,10 @@ public class DictionaryTest {
         dictionary.addAWord("hell");
         Assert.assertEquals(6,dictionary.getNodeCounts());
         Assert.assertEquals(3,dictionary.getWordCounts());
+
+        dictionary.addAWord("a");
+        Assert.assertEquals(7,dictionary.getNodeCounts());
+        Assert.assertEquals(4,dictionary.getWordCounts());
+
     }
 }
