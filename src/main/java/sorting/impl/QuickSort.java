@@ -6,7 +6,7 @@ public class QuickSort implements Sort {
     @Override
     public void sort(int[] arr) {
 
-        quickSort(arr);
+        //quickSort(arr);
     }
 
     void partition(int arr[],int low,int high)
@@ -27,7 +27,7 @@ public class QuickSort implements Sort {
             {
                 h--;
             }
-            if(l<h)
+            if(l<h);
                 //
         }
 
