@@ -4,10 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import src.main.java.sorting.Sort;
-import src.main.java.sorting.impl.BubbleSort;
-import src.main.java.sorting.impl.InsertionSort;
-import src.main.java.sorting.impl.SelectionSort;
-import src.main.java.sorting.impl.ShellSort;
+import src.main.java.sorting.impl.*;
 
 public class SortingTest {
 
@@ -17,15 +14,16 @@ public class SortingTest {
     {
         //sortingImpl = new BubbleSort();
         //sortingImpl = new SelectionSort();
-        sortingImpl = new InsertionSort();
-       // sortingImpl = new ShellSort();
+        //sortingImpl = new InsertionSort();
+        //sortingImpl = new ShellSort();
+        sortingImpl = new QuickSort();
         //switch here
     }
 
     @Test
     public void test_simple_selection()
     {
-        int arr[] = {37,18,73,10,5,2,15,0,17,22,43,};
+        int arr[] = {37,18,73,10,5,2,15,0,17,22,43};
         final int expectedArr[] = {0,2,5,10,15,17,18,22,37,43,73};
 
         sortingImpl.sort(arr);

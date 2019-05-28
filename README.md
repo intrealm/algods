@@ -124,3 +124,40 @@ Queue based on stack
     Clever Insertion Sort    
 
 ######Points to know    
+    1.Makes use of  //since insertion sort works faster for nearly sorted
+    2.Adaptive
+    3.Pretty much insertion sort
+    4.Complexity not sure!!
+        thus it is based on the increment value
+        and no science is present
+    At best it lies between O(N) and O(N^2)
+    5.Addaptice
+    6.No extra space
+    7.O(N^3/2) when for incremtns 2k-1 > 1,2,3 
+        
+        
+#####Merge Sort
+    DnC
+    split-mergeSort-merge    
+
+######Points to know  
+    1.Mathematical derivation
+    2.O(NLogN)
+    3.Better Than all of the above
+    4.Fast
+    4.Not adaptive
+    5.O(N extra) space
+    6.Stable (Mainttain the same order when sorting is done)
+    7.
+    
+#####Quick Sort
+    DnC
+    Standard libraries favourite    
+
+######Points to know  
+    1.based on Pivot, classifies into 2 partitions
+    2.Pivot is sorted
+    3.Start with pivot index 0 /random
+    4.Stable since pivot is placed on its desired poisioint
+    5. 
+    
