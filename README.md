@@ -160,4 +160,57 @@ Queue based on stack
     3.Start with pivot index 0 /random
     4.Stable since pivot is placed on its desired poisioint
     5. 
+   
+   
+#####Priority Queue(ADT)
+    Addition and removal of higher priority is very quick 
+    DS-Heap
     
+    options ?
+        work to be done
+        push,peek,remove with highest priority
+        1.Array/List Unordered
+            no sorting with priortity(depends on order of insertion)
+            insetion O1
+            access/remove On
+        2.OrderedList
+            insetion On
+            access/remove O1
+            TradeOff exists betwenn 1 and 2
+        3.BST(based on priority)
+            Insertion LogN
+            Access/Remove LogN
+            TradeOff still faster then 1 and 2
+            while no O1 so just an improvment
+        4.Even better ??????
+            BINARY HEAP
+            INSERTION Logn
+            access  O1 
+            remove logn
+            better thn a BST in access
+            awesome right ??
+            
+            
+           
+         
+    
+######Points to know
+    1. Insert Elements with priority
+    2. access/remove the highest priority element
+    3. Properties
+        Complete Binary Tree
+        Minimum Heap and Maximum Heap
+    4.Need operation
+        getRight/Left/Parent of any node
+        so traditional binary tree would now require a new parent reference
+        thus making it unncesaary extra space
+        Thus, Array which is capable to hold the same as a logical tree
+        Pointers are taken away(save space)
+    5. Array maths
+        for node i
+        2*i+1 = left
+        2*i+2 = right
+        (i-1)/2 = parent
+              
+     
+       

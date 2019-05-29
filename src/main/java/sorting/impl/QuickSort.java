@@ -7,9 +7,11 @@ public class QuickSort implements Sort {
     public void sort(int[] arr) {
 
         //quickSort(arr);
+
+        //partition(arr,o,arr.length)
     }
 
-    void partition(int arr[],int low,int high)
+    private int partition(int arr[],int low,int high)
     {
         //find pivot
         //move elements to before or after the pivot
@@ -27,10 +29,11 @@ public class QuickSort implements Sort {
             {
                 h--;
             }
-            if(l<h);
-                //
+            if(l<h)
+                swap(arr,l,h);
         }
-
+        swap(arr,low,h);
+        return h;
     }
 
     void quickSorT()

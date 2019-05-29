@@ -10,6 +10,68 @@ import java.util.function.Consumer;
 public class BinaryTreeTest {
 
     @Test
+    public void MirrorTest()
+    {
+        BinaryTree tree = new BinaryTree();
+
+        tree.addValue(3);
+        tree.addValue(9);
+        tree.addValue(20);
+        tree.addValue(15);
+        tree.addValue(7);
+
+        tree.addValue(5);
+        tree.addValue(4);
+        tree.addValue(22);
+        tree.addValue(13);
+        tree.addValue(70);
+        tree.addValue(8);
+
+        tree.mirror_the_tree();
+
+        BinaryTree tree2 = new BinaryTree();
+
+        tree2.addValue(3);
+        tree2.addValue(9);
+        tree2.addValue(20);
+        tree2.addValue(15);
+        tree2.addValue(7);
+
+        tree2.addValue(5);
+        tree2.addValue(4);
+        tree2.addValue(22);
+        tree2.addValue(13);
+        tree2.addValue(70);
+        tree2.addValue(8);
+
+        Assert.assertEquals(tree2.getHead().getRight().getRight().getLeft().getLeft(),tree.getHead().getLeft().getLeft().getRight().getRight());
+    }
+
+
+    @Test
+    public void getDepth()
+    {
+        BinaryTree tree = new BinaryTree();
+
+        tree.addValue(3);
+        tree.addValue(9);
+        tree.addValue(20);
+        tree.addValue(15);
+        tree.addValue(7);
+
+        tree.addValue(5);
+        tree.addValue(4);
+        tree.addValue(22);
+        tree.addValue(13);
+        tree.addValue(70);
+        tree.addValue(8);
+
+        Assert.assertEquals(4,tree.maxDepth());
+
+        Assert.assertEquals(Integer.MIN_VALUE,new BinaryTree().maxDepth());
+    }
+
+    @Test
     public void testForInOrder()
     {
         BinaryTree tree = new BinaryTree();

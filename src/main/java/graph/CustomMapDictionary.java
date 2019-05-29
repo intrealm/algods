@@ -17,14 +17,11 @@ public class CustomMapDictionary {
     }
 
     public void addAWord(String word) {
-        if (word != null) { //empty check would be fine too
+        if (word != null && !word.isEmpty()) { //empty check would be fine too
             //find the set till dictionary is not yet populated
             Map<Character,GNodeV3<Character>> currMap = this.firstCharactersMap;
             char[] charArr = word.toCharArray();
 
-            if (charArr.length < 1) {
-                return;
-            }
             //till what index its already available
             // x
             int x = 0;

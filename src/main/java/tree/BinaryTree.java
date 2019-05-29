@@ -1,7 +1,6 @@
 package tree;
 
 
-
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -9,11 +8,11 @@ import java.util.Objects;
 
 public class BinaryTree {
 
-    private BinaryTreeNode head;
+    private tree.BinaryTreeNode head;
 
     public void addValue(int value)
     {
-        BinaryTreeNode node = createNode(value);
+        tree.BinaryTreeNode node = createNode(value);
         if(head==null)
         {
             head = node;
@@ -24,8 +23,48 @@ public class BinaryTree {
         }
     }
 
+    public int maxDepth()
+    {
+        if(this.head!=null)
+        return maxDepth(this.head,0);
+        return Integer.MIN_VALUE;
+    }
+    private int maxDepth(tree.BinaryTreeNode node,int h)
+    {
+        if(node.getLeft()!=null && node.getRight()!=null)
+            return Math.max(maxDepth(node.getLeft(),h+1),maxDepth(node.getRight(),h+1));
+        if(node.getLeft()!=null)
+            return maxDepth(node.getLeft(),h+1);
+        if(node.getRight()!=null)
+            return maxDepth(node.getRight(),h+1);
+        return h;
+    }
 
-    protected void addNewNode(BinaryTreeNode currentNode, BinaryTreeNode newNode)
+    public void mirror_the_tree()
+    {
+        if(this.head!=null)
+            mirrorTheNode(this.head);
+    }
+
+    private void mirrorTheNode(tree.BinaryTreeNode node)
+    {
+        tree.BinaryTreeNode left = node.getLeft();
+         tree.BinaryTreeNode right=node.getRight();
+        if(left!=null)
+        {
+            mirrorTheNode(left);
+            node.setRight(left);
+        }
+        if(right!=null)
+        {
+            mirrorTheNode(right);
+            node.setLeft(right);
+        }
+
+    }
+
+
+    protected void addNewNode(tree.BinaryTreeNode currentNode, tree.BinaryTreeNode newNode)
     {
         //return node = currentNude;
         if(currentNode.getVal()>newNode.getVal() )
@@ -52,12 +91,12 @@ public class BinaryTree {
 
     }
 
-    protected BinaryTreeNode createNode(int value)
+    protected tree.BinaryTreeNode createNode(int value)
     {
-        return new BinaryTreeNode(value);
+        return new tree.BinaryTreeNode(value);
     }
 
-    private void getorderedList( BinaryTreeNode currNode,LinkedList<Integer> list)
+    private void getorderedList(tree.BinaryTreeNode currNode, LinkedList<Integer> list)
     {
 
         //navigateLeft
@@ -73,7 +112,7 @@ public class BinaryTree {
         }
     }
 
-    private void getPostorderedList( BinaryTreeNode currNode,LinkedList<Integer> list)
+    private void getPostorderedList(tree.BinaryTreeNode currNode, LinkedList<Integer> list)
     {
 
         //navigateLeft
@@ -87,7 +126,7 @@ public class BinaryTree {
         }
         list.add(currNode.getVal());
     }
-    private void getPreorderedList( BinaryTreeNode currNode,LinkedList<Integer> list)
+    private void getPreorderedList(tree.BinaryTreeNode currNode, LinkedList<Integer> list)
     {
         list.add(currNode.getVal());
         //navigateLeft
@@ -101,7 +140,7 @@ public class BinaryTree {
         }
     }
 
-    private void getTwistedOrderedList( BinaryTreeNode currNode,LinkedList<Integer> list,boolean twist)
+    private void getTwistedOrderedList(tree.BinaryTreeNode currNode, LinkedList<Integer> list, boolean twist)
     {
         list.add(currNode.getVal());
         if(!twist)
@@ -172,7 +211,7 @@ public class BinaryTree {
 
     String actualTrueTreeFormed()
     {
-        BinaryTreeNode node = this.head;
+        tree.BinaryTreeNode node = this.head;
         StringBuffer sb = new StringBuffer();
 
         if(node!=null)
@@ -182,7 +221,7 @@ public class BinaryTree {
 
     final String seperator = System.getProperty("line.separator");
 
-    void publishToBuffer(BinaryTreeNode node,StringBuffer sb)
+    void publishToBuffer(tree.BinaryTreeNode node, StringBuffer sb)
     {
         sb.append(seperator);
         sb.append(node.getVal());
@@ -193,6 +232,13 @@ public class BinaryTree {
     }
 
 
+    public tree.BinaryTreeNode getHead() {
+        return head;
+    }
+
+    public void setHead(tree.BinaryTreeNode head) {
+        this.head = head;
+    }
 
     public String toString()
     {
