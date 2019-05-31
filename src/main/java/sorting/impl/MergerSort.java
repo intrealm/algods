@@ -5,8 +5,6 @@ import src.main.java.sorting.Sort;
 public class MergerSort implements Sort {
     @Override
     public void sort(int[] arr) {
-
-
         mergeSort(arr);
     }
 

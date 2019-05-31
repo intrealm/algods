@@ -235,7 +235,7 @@ Queue based on stack
 #####Heap Sort(ADT)
     portions of the array(check if they are satisfying the heap property)
     takes an unsorted array -> convertes to heap and then sort to an array
-    Heapify
+    Heapify on the last parent
         start with last item
         check if the parent,left/reight satisify the property
         
@@ -409,4 +409,43 @@ Minimum spanning tree
     Complexity ElogE best man
     
      
+     
+     
+Notes
+
+
+
+
+
+Graph
+    Topological Sort
+        based o value of the inOrdered
+        add 0 orderedVertices and update the verticeInOrderMap
+            and continue
+
+    unweightedGraph
+        using Breadth first(queue basiclaly)
+        prepared a distance Table
+
+    weightedGraph
+        shorted Path in weightedGraph
+        Dijkstra
+            priorityQueue
+            greedy
+            may not optimal as a whole
+            priorityQueue for the vertices
+            distanceTable
+            
+        BellFord
+            (V-1)
+    
+    minimum Spannig tree
+    Prims
+        connected
+        prerrty much dijsktra
+    
+    kruskal
+        forrest
+        works of edges
+        
      

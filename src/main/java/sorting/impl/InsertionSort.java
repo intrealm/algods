@@ -25,7 +25,7 @@ public class InsertionSort implements Sort {
                     swap(arr,j,j-1);
                 else
                     break;
-                }
+            }
             System.out.println(Arrays.toString(arr));
         }
     }
