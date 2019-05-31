@@ -80,4 +80,19 @@ public class SortingTest {
             Assert.assertArrayEquals(expectedArr,arr);
         }
     }
+
+
+    @Test
+    public void test_simple_heap()
+    {
+        int arr[] = {10,5,2,15,0,17,73,43,37,18,73};
+
+        final int expectedArr[] = {0,2,5,10,15,17,18,37,43,73,73};
+
+        new HeapSort().sort(arr);
+
+        Assert.assertArrayEquals(expectedArr,arr);
+
+
+        }
 }

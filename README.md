@@ -211,6 +211,175 @@ Queue based on stack
         2*i+1 = left
         2*i+2 = right
         (i-1)/2 = parent
-              
+    6.Heapify a single element
+        sift down (chooose left or right Math.min(left,right)(MINHEAP))
+            find smallest(left or right) and check is smallest child is smaller than the parent
+        sift Up (chooose left or right Math.min(left,right)(MINHEAP))
      
+    Utility methods
+        getParentIndex
+        getLeftIndex
+        getRightIndex
+        siftUp
+        siftDown
+    
+    Insertion
+        insert at leaf(last open array position)
+        heapify(SIFTUP) hehe
+        //
+        logN
+     
+    Access
+    
+    
+#####Heap Sort(ADT)
+    portions of the array(check if they are satisfying the heap property)
+    takes an unsorted array -> convertes to heap and then sort to an array
+    Heapify
+        start with last item
+        check if the parent,left/reight satisify the property
+        
+    Sort on a heapified array
+        is a valid maxHeap
+        swap first with the last
+        curr arr list ofheapappendedwithsoertedarray
+
+    insertion/removeal
+        logN
+    sorting NlogN
+    Not Adaptive
+    Not stable sort(order betwenn 2 order is not maintained)
+    no additional space
+    
+#####Maximum Element in minHeap
+    brute force compare leftandright
+            recursivly
+    check for leaf nodes only
+    
+    
+#####K largest elements in a stream
+    use similar heap data on array of K element
+    add first k elements and heapify on minHEAD,
+    compare incoming elemtn which first element,
+    if incoming element is larger
+        swap larger element fromm the 1st element and heapify
+    
+    
+###Graph
+     Used to represent relationships between entitiees
+     very wide applications
+     Used to solve interesting problems
+     
+Vertex
+    entity we are trying to model
+    
+    
+Edge
+    relationship between vertices
+
+ProfessionalGraph - LinkedIn
+people is vertex    
+Profession/senior/junior is edges
+
+SocialGraph - Facebook
+people is vertex    
+Sister/mother/friend is edges
+
+LocationGraph - map (information and distance time) 
+locaiton is vertex
+road/rail/air is an edge
+
+Phone network
+LandLines vertex
+network to carry voice is an edge
+uses alogirthm to figure out fastest route
+
+Internet (graph/hesh)
+Computer
+wired/wireless
+
+####Types of Graph
+    is set of vertices and edges
+
+######Points to remember
+    set of (V,E) 
+        count(V)-1 = count(E) 
+    1.  Graph without undirected edges
+        A---B
+        A,B are vertices
+        --- is an edge
+    2.  Directed Graph with directed edges
+        A-->B
+        --> single directional traversal
+        A source
+        B destination
+    Connected Graph all nodes are joined using edges
+    Acyclic graph is nothing but a (nary)tree
+    
+    Two sub graphs not connected are not 
+    is forest/dijointed tree
+    
+    Directed acyclic graph
+        DAG  
+        
+    Represent Datastructure in graphs
+    1. Adjacency Matrix
+        directly connects to
+    2. Adjacency List
+    3. Adjacency Set subset of point 2
+    
+    
+####AdjacencyMatrix vs Adjacency List/Set
+    connected graph on matrix for space overehead V^2
+    space = V^2
+    ispresent = 1 
+    iteration of eges on a vertex = V
+    
+    sparse grap on list/set
+    space = E+V
+    ispresent = Degree of V
+    iteration of edge on a vertex = Degree of V
+    
+    sparse grap on set
+    space = E+V
+    ispresent = log(Degree of V) since contains work on set faster
+    iteration of edge on a vertex = Degree of V
+    
+####Breadth First
+    recursively done
+Depth First
+    while loop using queue
+    
+    
+TODO IMPLS
+breadth frst and depth first
+    
+    
+    
+#####Topological
+    directed acycllic graph
+    a--->b ,  a comes before b
+    is A tological Sort
+    
+    indegree must be 0 otherwise its a cycle graph, no topological sort
+    
+    T Sort
+    O(V+E) as all of them are visited exactly once
+
+
+Shorted path in unweighted graph
+    using breadth first search two step process
+    1.prepare a table (custom object which hold distance from source and previos vertex info)
+    2.traverse from desination to source from the distancetable
+    
+Shorteed path in weighted graph
+    Djkstra is a greedy algo
+    uses the distance table
+       but it also updates the distance table
+       known as Relaxation
+    1. shorted path on chooses the lowest edge to traveerse
+    2. possible to visit more than onces, uses relaxation
+    3. accunts for the weights on the edges
+    
        
+    
