@@ -373,13 +373,40 @@ Shorted path in unweighted graph
     2.traverse from desination to source from the distancetable
     
 Shorteed path in weighted graph
-    Djkstra is a greedy algo
+    Dijkstra is a greedy algo
     uses the distance table
        but it also updates the distance table
        known as Relaxation
     1. shorted path on chooses the lowest edge to traveerse
     2. possible to visit more than onces, uses relaxation
     3. accunts for the weights on the edges
+    Using priorityQueue and with Priority as the weight(previosVertex+edge'weight)
     
-       
+
+Bellman Ford Graph
+    weighted graph including negative weight
     
+    But needs V-1 times iterations from the source
+    detect a negative cycle and say it cant be done
+        if not done in v-1 cycles
+        
+Minimum spanning tree
+    Prim's algo
+        connected undirected graphs
+    uses pretty much the djistra
+        is greedy and 
+    weight = weight on the edge
+
+
+    Kurskal's algo
+        dijointed
+    similiar to the prims'algo
+    must not creat a cycle
+    v-1 edges(sub graph only)
+    
+    steps 
+        Add edges to the priorityQueue
+    Complexity ElogE best man
+    
+     
+     
